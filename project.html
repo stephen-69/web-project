@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="project.css">
+    <title>Travel Landing page</title>
+
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div>
+        <section>
+            <div class="fullscreen-video-wrap">
+                <video id="myvideo" src="projectvideo.mp4" muted loop autoplay ></video>
+            </div>
+            <!-- side writing -->
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                <div class="container">
+                        <a href="#" class="navbar-brand"><h6>SOUNDS <img src="sound.png" alt=""></h6> </a>
+                    <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+        
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav text-center ms-auto">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="COLLECTION.html" class="nav-link">COLLECTION</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="LOGIN.html" class="nav-link">LOGIN</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact us.html" class="nav-link">CONTACT US</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="about us.html" class="nav-link">ABOUT US</a>
+                            </li>
+                        </ul>
+                    </div>
+        
+                </div>
+            </nav>
+        </section>
+        <div class="content">
+            <div class="left">
+                <h1>THE <br> REAL <br> MUSIC</h1>  <!-- <br> will breake the text -->
+            </div>
+            <div class="right">
+                <p>Click To Play</p>
+                <img src="play-button.png" id="icon">
+            </div>
+        </div>
+    </div>
+    <audio id="mysong">
+        <source src="true-colors.mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+        var mysong = document.getElementById("mysong");
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function(){
+            if(mysong.paused){
+                mysong.play();
+                icon.scr = "pause.png";
+            }else{
+                mysong.pause();
+                icon.src = "play-button.png";
+            }
+        }
+        
+    </script>
+    
+    
+    <!-- drop down button -->
+    <script src="bootstrap.bundle.js"></script>
+
+    <!-- footer -->
+    <!-- <div class="footer"> 
+        <div class="footer-content">
+            <div class="footer-section about"></div>
+            <div class="footer-section link"></div>
+            <div class="footer-section contact-form"></div>
+        </div>
+        <div class="footer-botton">
+            &copy; codinegpoets.com | Designed by Awa Melvine
+        </div>
+    </div> -->
+    <!-- footer -->
+    
+</body>
+</html>

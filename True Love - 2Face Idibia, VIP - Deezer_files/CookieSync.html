@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!-- saved from url=(0092)https://csync.smartadserver.com/diff/rtb/csync/CookieSync.html?nwid=400&dcid=4&gdpr=0&gdprc= -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>CookieSync Page</title>
+</head>
+<body>
+    <script src="./CookieSync.min.js" type="text/javascript"></script>
+    <script src="./TemplatePool.min.js" type="text/javascript"></script>
+    <script src="./cmp.js" type="text/javascript"></script>
+    <script>
+	    const cmp2 = new SasIabApi({
+            name: 'CMP V2',
+            version: 2,
+            apiFunctionName: '__tcfapi',
+            getConsentFunction: 'addEventListener',
+            sasCookieName: 'sas_euconsent_v2',
+            sasAddtlCookieName: 'sas_addtl_euconsent_v2',
+            consentObjectConsentDataName: 'tcString',
+            consentObjectAdditionalConsentDataName: 'addtlConsent',
+            apiLocator: '__tcfapiLocator',
+            sentMessage: '__tcfapiCall',
+            postMessageReturnObjectName: '__tcfapiReturn'
+        });
+
+        cmp2.searchApi();
+    </script>
+    <script>
+        sasCookieSync.fireCSync(poolData);
+    </script><iframe src="./UCookieSetPug.html" scrolling="no" frameborder="0" width="0" height="0" style="margin: 0px; padding: 0px; display: none; width: 0px; height: 0px;"></iframe><iframe src="./cm.html" scrolling="no" frameborder="0" width="0" height="0" style="margin: 0px; padding: 0px; display: none; width: 0px; height: 0px;"></iframe><iframe src="./cs.html" scrolling="no" frameborder="0" width="0" height="0" style="margin: 0px; padding: 0px; display: none; width: 0px; height: 0px;"></iframe><iframe src="./usermatch.html" scrolling="no" frameborder="0" width="0" height="0" style="margin: 0px; padding: 0px; display: none; width: 0px; height: 0px;"></iframe>
+
+
+</body></html>
